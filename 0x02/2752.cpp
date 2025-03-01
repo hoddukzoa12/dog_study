@@ -24,7 +24,6 @@ int main(){
 
     for(int i=2;i>=0;i--){
         for(int j=0;j<i;j++){
-            cout << j << '\n';
             if(a[j]>a[j+1]) sort(j,j+1);
         }
     }
