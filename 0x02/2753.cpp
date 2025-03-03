@@ -10,5 +10,22 @@ using namespace std;
 */
 
 bool yoon(int year){
-    if()
+    if(year%400==0){
+        return true;
+    }
+    else if(year%100!=0&&year%4==0){
+        return true;
+    }
+    else return false;
+}
+
+int main(){
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int year;
+    cin >> year;
+    if(yoon(year)) cout << "1";
+    else cout << "0";
+
+    return 0;
 }
